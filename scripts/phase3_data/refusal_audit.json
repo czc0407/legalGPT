@@ -1,0 +1,394 @@
+[
+  {
+    "id": "sft_card5_000001",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000002",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000003",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000004",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000005",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000006",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000007",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000008",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000009",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000010",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000011",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000012",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000013",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000014",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000015",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000016",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000017",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000018",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000019",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000020",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000021",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000022",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000023",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000024",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000025",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000026",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000027",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000028",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000029",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000030",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000031",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000032",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000034",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000033",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000035",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000036",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000037",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000038",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000039",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000040",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000041",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000044",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000043",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000046",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000045",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000049",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000048",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000047",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000051",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000050",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000052",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000053",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000055",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000054",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000056",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000057",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000058",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000059",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000060",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000061",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000100",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000099",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000098",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000097",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000096",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000095",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000094",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000093",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000092",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000091",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000090",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000089",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000088",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000087",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000085",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000083",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000084",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000082",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000081",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000080",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000079",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000078",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000077",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000076",
+    "verdict": "keep"
+  },
+  {
+    "id": "sft_card5_000075",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000074",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000073",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000072",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000071",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000070",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000069",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000068",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000067",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000066",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000065",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000064",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000063",
+    "verdict": "move"
+  },
+  {
+    "id": "sft_card5_000062",
+    "verdict": "move"
+  }
+]

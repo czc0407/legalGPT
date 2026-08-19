@@ -1,0 +1,20 @@
+{
+  "legal_sft_half": {
+    "file_name": "data/sft/05_train/train_half.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "legal_sft_full": {
+    "file_name": "data/sft/05_train/train.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  }
+}

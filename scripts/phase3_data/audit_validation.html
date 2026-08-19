@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>训练数据校验审核</title>
+<style>
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:-apple-system, sans-serif; background:#f5f5f5; padding:12px; }
+.header { position:sticky; top:0; background:#fff; padding:12px 16px; border-bottom:2px solid #e0e0e0; margin-bottom:12px; z-index:100; }
+.stats { display:flex; gap:12px; font-size:13px; margin-bottom:8px; }
+.stat { padding:4px 10px; border-radius:10px; font-weight:500; }
+.stat-pass { background:#e8f5e9; color:#2e7d32; }
+.stat-fail { background:#ffebee; color:#c62828; }
+.stat-pending { background:#fff3e0; color:#e65100; }
+.stat-info { background:#e3f2fd; color:#1565c0; }
+.card { background:#fff; border:1px solid #e0e0e0; border-radius:6px; margin-bottom:10px; overflow:hidden; }
+.card-header { padding:10px 14px; border-bottom:1px solid #f0f0f0; background:#fafafa; font-size:13px; display:flex; justify-content:space-between; align-items:center; }
+.id { font-weight:600; }
+.badge { font-size:11px; padding:2px 6px; border-radius:3px; margin-left:4px; }
+.badge-danger { background:#ffebee; color:#c62828; }
+.badge-warn { background:#fff3e0; color:#e65100; }
+.badge-ok { background:#e8f5e9; color:#2e7d32; }
+.card-body { padding:12px 14px; }
+.row { display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
+.col-label { font-size:11px; color:#bbb; margin-bottom:2px; }
+.col-text { font-size:13px; line-height:1.5; color:#333; white-space:pre-wrap; word-break:break-word; max-height:300px; overflow-y:auto; }
+.issue { font-size:12px; color:#c62828; background:#ffebee; padding:4px 8px; border-radius:4px; margin-top:8px; }
+.issue-info { font-size:12px; color:#1565c0; background:#e3f2fd; padding:4px 8px; border-radius:4px; margin-top:4px; }
+.card-footer { padding:10px 14px; border-top:1px solid #f0f0f0; display:flex; gap:6px; }
+.btn { padding:6px 16px; border:none; border-radius:4px; cursor:pointer; font-size:13px; }
+.btn-keep { background:#4caf50; color:#fff; }
+.btn-remove { background:#f44336; color:#fff; }
+.btn-reset { background:#eee; color:#666; }
+.btn-export { background:#2196f3; color:#fff; margin-left:auto; }
+.verdict { font-size:11px; padding:1px 6px; border-radius:3px; margin-left:6px; }
+.verdict-keep { background:#e8f5e9; color:#2e7d32; }
+.verdict-remove { background:#ffebee; color:#c62828; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h3>训练数据校验审核</h3>
+  <div class="stats">
+    <span class="stat stat-pending" id="stat-pending">待审: -</span>
+    <span class="stat stat-pass" id="stat-keep">保留: -</span>
+    <span class="stat stat-fail" id="stat-remove">移除: -</span>
+    <span class="stat stat-info" id="stat-total">总计: -</span>
+  </div>
+  <button class="btn btn-export" onclick="exportJSON()">📥 导出结果</button>
+</div>
+<div id="cards"></div>
+
+<script>
+// Load from generated JSON
+const DATA_URL = '../../data/sft/04_cards/validation_audit.json';
+
+let state = {};
+try { state = JSON.parse(localStorage.getItem('validation_audit') || '{}'); } catch(e) {}
+
+// Normalize law name: strip 中华人民共和国/中国 prefix
+function normalize(name) {
+  for (let p of ['中华人民共和国','中国']) {
+    if (name.startsWith(p) && name.length > p.length) return name.slice(p.length);
+  }
+  return name;
+}
+
+function load() {
+  fetch(DATA_URL).then(r => r.json()).then(samples => {
+    let pending = 0, keep = 0, remove = 0;
+    const div = document.getElementById('cards');
+
+    document.getElementById('stat-total').textContent = '总计: ' + samples.length;
+
+    samples.forEach(s => {
+      const v = state[s.id];
+      if (v === 'keep') keep++;
+      else if (v === 'remove') remove++;
+      else pending++;
+
+      // Build issue details from enriched data
+      let issues = '';
+      (s.issues_enriched || []).forEach(e => {
+        if (e.type === 'law_loss') {
+          let cls = e.real_lost.length === 0 ? 'issue-info' : 'issue';
+          issues += '<div class="' + cls + '">';
+          issues += '<b>丢失原始法律</b>: ' + e.lost.join(', ') + '<br>';
+          if (e.added.length) issues += '新增法律: ' + e.added.join(', ') + '<br>';
+          if (e.compensated.length) issues += '✅ 已弥补（去前缀后等价）: ' + e.compensated.join(', ') + '<br>';
+          if (e.real_lost.length) issues += '⚠️ 真正丢失: ' + e.real_lost.join(', ');
+          issues += '</div>';
+        } else if (e.type === 'article') {
+          issues += '<div class="issue">' + e.raw + '</div>';
+        } else {
+          issues += '<div class="issue">' + e.raw + '</div>';
+        }
+      });
+
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.id = 'card-' + s.id;
+      card.innerHTML =
+        '<div class="card-header">'
+        + '<span><span class="id">' + s.id + '</span>'
+        + '<span class="badge badge-danger">卡' + s.card + '</span>'
+        + (v ? '<span class="verdict verdict-' + v + '">' + (v==='keep' ? '✅ 保留' : '❌ 移除') + '</span>' : '')
+        + '</span>'
+        + '<span style="font-size:11px;color:#999">' + s.answer_len + '字</span>'
+        + '</div>'
+        + '<div class="card-body">'
+        + '<div class="row">'
+        + '<div><div class="col-label">Q</div><div class="col-text">' + esc(s.question || '?') + '</div></div>'
+        + '<div><div class="col-label">A</div><div class="col-text">' + esc(s.answer || '?') + '</div></div>'
+        + '</div>'
+        + issues
+        + '</div>'
+        + '<div class="card-footer">'
+        + '<button class="btn btn-keep" onclick="judge(\'' + s.id + '\',\'keep\')">✅ 保留</button>'
+        + '<button class="btn btn-remove" onclick="judge(\'' + s.id + '\',\'remove\')">❌ 移除</button>'
+        + '<button class="btn btn-reset" onclick="judge(\'' + s.id + '\',null)">↩ 重置</button>'
+        + '</div>';
+      div.appendChild(card);
+    });
+
+    document.getElementById('stat-pending').textContent = '待审: ' + pending;
+    document.getElementById('stat-keep').textContent = '保留: ' + keep;
+    document.getElementById('stat-remove').textContent = '移除: ' + remove;
+  });
+}
+
+function judge(id, verdict) {
+  if (verdict === null) delete state[id];
+  else state[id] = verdict;
+  localStorage.setItem('validation_audit', JSON.stringify(state));
+  location.reload();
+}
+
+function exportJSON() {
+  const out = Object.entries(state).map(([id, v]) => ({id, verdict: v}));
+  const blob = new Blob([JSON.stringify(out, null, 2)], {type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'validation_audit_fixed.json';
+  alert('已导出 validation_audit_fixed.json，请移动到项目 scripts/phase3_data/ 目录下：\\n\\nmv ~/Downloads/validation_audit_fixed.json ' + document.baseURI.replace(/audit_validation.html/, '') + '\\n\\n然后执行：\\npython scripts/phase3_data/clean_dataset.py --audit scripts/phase3_data/validation_audit_fixed.json'
+  a.click();
+}
+
+function esc(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+load();
+</script>
+</body>
+</html>

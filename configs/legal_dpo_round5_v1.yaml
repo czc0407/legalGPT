@@ -1,0 +1,32 @@
+### model
+model_name_or_path: Qwen/Qwen2.5-7B-Instruct
+adapter_name_or_path: saves/qwen2.5-7b-legal-sft-full
+
+### method
+stage: dpo
+do_train: true
+finetuning_type: lora
+lora_target: q_proj,v_proj
+pref_beta: 0.5
+pref_loss: sigmoid
+
+### dataset
+dataset: legal_dpo_round5_v1
+template: qwen
+cutoff_len: 1024
+preprocessing_num_workers: 1
+
+### output
+output_dir: saves/qwen2.5-7b-legal-dpo-round5-v1
+logging_steps: 1
+save_steps: 500
+plot_loss: true
+
+### train
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 16
+learning_rate: 5.0e-5
+num_train_epochs: 1.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.03
+bf16: true

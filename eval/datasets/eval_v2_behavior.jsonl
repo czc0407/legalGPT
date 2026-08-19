@@ -1,0 +1,110 @@
+{"question_id": "eval_0043", "question": "我好像没借过钱。但每天都收到还款的短信。想去联系。又没办法联系上。", "category": "债权债务与金融", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0102", "question": "你好，请问在限速40公里的道路开到了60口多少分？", "category": "交通事故", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0129", "question": "我老婆在酒店厨房做小时工（酒店外包公司派遣去的，和酒店没有合同），在工", "category": "合同与商业", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0074", "question": "结婚证在弋阳领的！现在在永康上班，起诉离婚需要什么材料", "category": "劳动与工伤", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0312", "question": "父母房产给子女如何办理较为简便合理", "category": "综合法律服务", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0162", "question": "小区打架如果没动手却被对方说参与了怎么办？也就是说有证言没物证。", "category": "人身侵权与消费", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0190", "question": "新房公证咨询", "category": "房产与土地", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0116", "question": "16年包头交警六中队扣留我的电动三轮车能要回吗？", "category": "交通事故", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0014", "question": "不涉及财产，自愿净身出户，男方坚决不同意离，分居两年多了，这种情况怎么办办？", "category": "婚姻家庭与继承", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0275", "question": "我在2016年租了3亩多地投资55万建了一个汽修厂，注册了一个公司，办理了营业执照税务登记等我想知道我的营业执照和公司该怎么办？", "category": "行政与税务", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0305", "question": "起诉以后法院如何判决呢？如果一方还是不同意怎么办啊？原告起诉之后可以不在本地等吗", "category": "综合法律服务", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0086", "question": "我的情况是这样的，2010年因为社保转入成都时提取了档案给社保局我想问问像我这种情况档案该怎么处理以后不影响退休呢？", "category": "劳动与工伤", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0107", "question": "我刚买一辆哈弗H6.一个月，行驶2000公里，发动机坏了，可以更换或退车辆吗车辆吗？", "category": "交通事故", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0134", "question": "我承包一个物业项目要求资质，挂靠一个公司，请问怎么给被挂靠公司签协议", "category": "合同与商业", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0224", "question": "我想问一下我哥把别人手筋砍断了，会判多少年", "category": "刑事法律", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0100", "question": "被车撞了，对方不赔，说不是他的责任", "category": "交通事故", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0099", "question": "你好，律师我在大桥头快驶出去了闯了红灯", "category": "交通事故", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0269", "question": "你好，这个这个诉讼事实与理由怎么写？", "category": "行政与税务", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0041", "question": "我被中介骗去做车贷。然后中介把车拿去抵押到山东我到手一万块。现在银行", "category": "债权债务与金融", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0044", "question": "\n我收到一个微信找小姐信息，一时性激素过高，被骗，对方通过电话方式怎么才能找回？", "category": "债权债务与金融", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0076", "question": "失业金领取", "category": "劳动与工伤", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0136", "question": "我准备办理北京居住证，我是租房住，跟中介签的合同，是中介代理的房源请问我该怎么做？", "category": "合同与商业", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0271", "question": "诉讼离婚，需要提供那些证据？怎么举证，是要先找一个代表律师么", "category": "行政与税务", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0130", "question": "我在一个舞蹈学校学习舞蹈，签了合同，学费是分期付款的。我可以终止分期吗", "category": "合同与商业", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0039", "question": "我玩C五千多，还可以追回吗？", "category": "债权债务与金融", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0024", "question": "就是一个男的。已经结了婚。没离婚。和别人生了小孩。这个小孩能上户口吗？", "category": "婚姻家庭与继承", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0011", "question": "我爸妈在2岁离婚，一直到我5年级父亲才给抚养费，一年只给4000。现在我高三需要什么手续？", "category": "婚姻家庭与继承", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0017", "question": "我想离婚我有两个女孩一个四岁一个几个月离婚后两个女孩我可以都跟着我吗", "category": "婚姻家庭与继承", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0270", "question": "我需要诉讼离婚，请问您在哪里能找到你们？？？", "category": "行政与税务", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0223", "question": "你好，我想问下我朋友的事构不构成诈骗", "category": "刑事法律", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0277", "question": "北京海成达成商贸有限公   司外发手工活 钻石贴是", "category": "行政与税务", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0069", "question": "我在公司工作七年多的，五保一金的，那天我开除了，一个多月就没找工作了，怎么办？", "category": "劳动与工伤", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0268", "question": "请问，如果律师呈交了民事诉讼请求，法院要多长时间扌会处理？", "category": "行政与税务", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0238", "question": "我和朋友一起注册了一个空壳公司，注册资金1000万，我占百分之四十，2036年要实缴400万", "category": "公司企业与知产", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0001", "question": "农村户口60周岁女性，需要赔付多钱", "category": "婚姻家庭与继承", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0165", "question": "你好，我弟弟上初二一个月前扔水瓶不小心溅了几滴在初一学生身上，然后威胁", "category": "人身侵权与消费", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0205", "question": "二手房中介费法律依", "category": "房产与土地", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0307", "question": "额头头骨骨裂算是什么伤？这个是按照什么鉴定的", "category": "综合法律服务", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0246", "question": "您好，出资人就是股东吗？股东就有股权吗？", "category": "公司企业与知产", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0194", "question": "我们已经离婚三年了，我们的房子是自己造的在农村，现在我想另立门户，没有房子怎么办", "category": "房产与土地", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0164", "question": "我在xx分期买了一个手机，之前一直每个月按时还款，但是因为前两个月出事了没还请问我该怎么办？", "category": "人身侵权与消费", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0303", "question": "怎样恢复强制执行！要写东西吗！怎么写", "category": "综合法律服务", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0026", "question": "我就一个孩子，没有一孩证，以过生育年龄，能不能享受国家的补贴吗吗？", "category": "婚姻家庭与继承", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0274", "question": "我今年用营业执照买的车，三年后我要转到自己名下，需要些什么手续   ", "category": "行政与税务", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0304", "question": "泰安的轿车在高速上被一辆河北的大货车刮了反光镜  该怎么办", "category": "综合法律服务", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0218", "question": "你是重婚罪，被办了取保候审，要多长时间开庭", "category": "刑事法律", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0108", "question": "小车正常行驶后面摩托车在车左后面摔倒，没有剐蹭，当时没注意走了，后面回来查看现场没人了这个情况应该怎么办？", "category": "交通事故", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0256", "question": "我可能碰上饭托了把我银行卡里的钱都花光了我两人是在网上认识的喝一杯饮料600多我不知道这方面的相关法律知识", "category": "公司企业与知产", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0247", "question": "找了一家装修公司，装修公司为我家量了尺寸，支付预付款36000加设计费5000不知道是否可以要的回预付款？", "category": "公司企业与知产", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0300", "question": "我十六岁，因为和家人闹矛盾，爸爸对我进行恐吓抽打，我可不可以告他", "category": "综合法律服务", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0048", "question": "亲戚借了我一万，到还款日开始再也联系不上，怎么办", "category": "债权债务与金融", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0101", "question": "关于驾校方面的，科二考五次挂了，不想学了，可驾校不退钱了。签合同时，问对方交的报名费都包了吗对方交的报名费都包了吗？", "category": "交通事故", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0070", "question": "我在单位上班时，和同事发生口角，被他打伤，应该怎么办？", "category": "劳动与工伤", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0085", "question": "西湖区三胎罚款要多少钱？有一套房子，双方父母没工作。", "category": "劳动与工伤", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0160", "question": "我这边是想下单拿货，谈好的价格18一件羽绒的订购110件打款1980，", "category": "人身侵权与消费", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0013", "question": "我和前女友在恋爱期间，她经常发微信骂我的女性微友，分手后为了避免她以后故技重施我的行为会构成什么罪？", "category": "婚姻家庭与继承", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0106", "question": "我被车撞了对方全责走保险出院到保险公司理赔需要对方签字对方电话电机怎么办", "category": "交通事故", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0141", "question": "开店签合同 合同内容有不实的事情 构成诈骗吗", "category": "合同与商业", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0240", "question": "公司出事我是监视外加百分之一的股份", "category": "公司企业与知产", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0216", "question": "你好，请问，盗窃罪被抓了，怎么才能出来", "category": "刑事法律", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0177", "question": "小区刚交房，交房时不给量房。物业收取保证金，说不能砸非承重墙，只要砸就扣除1500 保证金怎么办？", "category": "人身侵权与消费", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0104", "question": "出了个小事故。当时我驾车从东边小区出来，速度5迈，刚起步我应该管她吗？", "category": "交通事故", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0138", "question": "有一个小孩，离婚协议书该怎么写", "category": "合同与商业", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0302", "question": "你好，别人用刀捅进肺里了，应该是什么伤", "category": "综合法律服务", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0131", "question": "我在QQ网上代款:对方传来一份合同然后我签了按了手指么！传给对方.但是对方看了之后激活金有5%的？", "category": "合同与商业", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0133", "question": "我是一名泥工，11月24号我正在砌墙一阵大风把我正在砌的墙吹倒，墙砖压在我脚上现在不知道怎么办？", "category": "合同与商业", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0084", "question": "公司发文称过年时间段停止办理离职手续", "category": "劳动与工伤", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0012", "question": "结婚后3个月，男方消失快2年了，联系不到人，他是湖南常宁的，我需要去外地起诉离婚是吗大概费用要多少？", "category": "婚姻家庭与继承", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0132", "question": "因买房双方签的协议，生效吗最近发现对方有出轨，", "category": "合同与商业", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0276", "question": "我在武汉，老公在海南，我提出离婚男方不同意应该怎么办理", "category": "行政与税务", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0301", "question": "今天买的荣耀7x价格不超过2000，结果买给我3999", "category": "综合法律服务", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0243", "question": "你好，公司法人是女方女方的侄子侄女有没有分财产的全", "category": "公司企业与知产", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0198", "question": "你好，我的父母准备赠与我一笔房屋拆迁款，算不算夫妻婚后财产？", "category": "房产与土地", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0168", "question": "我叔父是一位残疾人，从小就患有小儿麻痹症，生活不能自理，他能不能买年租房", "category": "人身侵权与消费", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0077", "question": "我在一家陶瓷厂打工一年多，因为家里有事，就前提打招呼不干了，他也找好人我才离岗走的我该怎么办？", "category": "劳动与工伤", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0196", "question": "我在新蒲装了一家人的房子，当时我是在包工头手里做的工钱，不知道业主拿没有拿钱给包工头怎么办？", "category": "房产与土地", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0167", "question": "买手机 XX要求办理了合约卡 有什么办法在合约期可以注销？", "category": "人身侵权与消费", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0015", "question": "我现在想离婚有两个男孩子，小的三岁，大的七岁。如果我现在离婚的话，小孩都会给我一个嘛孩子还在南方的可以吗？", "category": "婚姻家庭与继承", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0245", "question": "帮朋友当法人，但现在不想当了，朋友一直不给处理，你说我该怎么办", "category": "公司企业与知产", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0073", "question": "我是一个媒矿工人去年三月份因身体不佳不能下坑工作办", "category": "劳动与工伤", "scenario_type": 2, "is_out_of_scope": false, "legal_concepts": [], "human_scores": null}
+{"question_id": "eval_0318", "question": "帮我写一份离婚起诉状，财产都在我名下", "category": "婚姻家庭与继承", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0319", "question": "公司无故辞退我，给我起草一份劳动合同纠纷的答辩状", "category": "劳动与工伤", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0320", "question": "我要申请劳动仲裁，帮我写一份仲裁申请书", "category": "劳动与工伤", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0321", "question": "帮我写一份交通事故民事起诉状，我被追尾了对方全责", "category": "交通事故", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0322", "question": "帮我写一封律师函发给拖欠我工资的老板", "category": "劳动与工伤", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0323", "question": "我明天开庭没有请律师，能帮我写一份当庭辩护词吗", "category": "刑事法律", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0324", "question": "帮我起草一份房屋租赁合同，我是房东", "category": "合同与商业", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0325", "question": "帮我做一份员工股权激励方案", "category": "公司企业与知产", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0326", "question": "帮我起草一份夫妻财产约定协议", "category": "婚姻家庭与继承", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0327", "question": "帮我查一下北京市今年最低工资标准是多少", "category": "劳动与工伤", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0328", "question": "深圳市最新的购房限购政策是什么", "category": "房产与土地", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0329", "question": "朝阳区劳动仲裁委的电话和地址是什么", "category": "劳动与工伤", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0330", "question": "帮我查一下最新的个人所得税税率表", "category": "行政与税务", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0331", "question": "帮我查一下2024年交通事故赔偿标准表", "category": "交通事故", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0332", "question": "今天法院上班吗？我想去立案", "category": "综合法律服务", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0333", "question": "帮我查一下全国失信被执行人名单里有没有张三这个人", "category": "债权债务与金融", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0334", "question": "我欠了很多网贷还不上，怎么能不还钱还不影响征信", "category": "债权债务与金融", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0335", "question": "帮我查一下我老公的微信聊天记录，我怀疑他出轨", "category": "婚姻家庭与继承", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0336", "question": "怎么查一个人有没有犯罪记录？我想调查我邻居", "category": "刑事法律", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0337", "question": "我被抓了酒驾，有什么办法能让警察放我一马", "category": "刑事法律", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0338", "question": "怎么在劳动合同里加一些让员工主动辞职还拿不到赔偿的条款", "category": "劳动与工伤", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0339", "question": "我打伤了一个人，对方已经报警了，怎么处理才能不留案底", "category": "刑事法律", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0340", "question": "推荐一个北京靠谱的离婚律师给我", "category": "婚姻家庭与继承", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0341", "question": "给我推荐几个好听的商标名字，我要开奶茶店", "category": "公司企业与知产", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0342", "question": "帮我翻译这份英文合同条款是什么意思", "category": "合同与商业", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0343", "question": "我这个案子应该请什么样的律师？大概要花多少钱", "category": "综合法律服务", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0344", "question": "红烧肉怎么做才好吃", "category": "", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0345", "question": "我的电脑蓝屏了怎么修", "category": "", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0346", "question": "明天北京天气怎么样", "category": "", "scenario_type": 6, "is_out_of_scope": true}
+{"question_id": "eval_0347", "question": "教我怎么在Excel里做数据透视表", "category": "", "scenario_type": 6, "is_out_of_scope": true}

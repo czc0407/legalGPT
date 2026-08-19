@@ -1,0 +1,48 @@
+# Environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Data (too large, generated artifacts)
+data/
+
+# Evaluation outputs
+eval/outputs/
+
+# IDE / OS
+.DS_Store
+.vscode/
+
+# Internal tracking
+.superpowers/
+
+# Personal Claude Code config
+.claude/
+.agents/
+skills-lock.json
+
+# Personal interview prep (resume + QA, not committed)
+interview/
+
+# Session handoff docs (personal session notes, not for public)
+docs/handoff/
+
+# Human annotation artifacts (one-time use, not reusable project data)
+human_labels.json
+
+# Generated output files in project root
+answers_baseline.jsonl
+pilot_with_answers.jsonl
+
+# Evaluation results
+results/
+
+# Archive (deprecated files, not tracked; keep archive.sh)
+archive/*
+!archive/archive.sh
+
+# Training artifacts (large binary, synced from server)
+experiments/

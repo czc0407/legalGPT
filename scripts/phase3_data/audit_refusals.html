@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>卡5 拒答样本审核</title>
+<style>
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:-apple-system, sans-serif; background:#f5f5f5; padding:12px; }
+.header { position:sticky; top:0; background:#fff; padding:12px 16px; border-bottom:2px solid #e0e0e0; margin-bottom:12px; z-index:100; }
+.stats { display:flex; gap:12px; font-size:13px; margin-bottom:8px; }
+.stat { padding:4px 10px; border-radius:10px; font-weight:500; }
+.stat-keep { background:#e8f5e9; color:#2e7d32; }
+.stat-move { background:#fff3e0; color:#e65100; }
+.stat-pending { background:#f3e5f5; color:#7b1fa2; }
+.card { background:#fff; border:1px solid #e0e0e0; border-radius:6px; margin-bottom:10px; overflow:hidden; }
+.card-header { padding:10px 14px; border-bottom:1px solid #f0f0f0; background:#fafafa; font-size:13px; display:flex; justify-content:space-between; align-items:center; }
+.id { font-weight:600; }
+.badge { font-size:11px; padding:2px 6px; border-radius:3px; margin-left:4px; }
+.badge-danger { background:#ffebee; color:#c62828; }
+.badge-warn { background:#fff3e0; color:#e65100; }
+.card-body { padding:12px 14px; }
+.col-label { font-size:11px; color:#bbb; margin-bottom:4px; }
+.col-text { font-size:13px; line-height:1.5; color:#333; white-space:pre-wrap; word-break:break-word; }
+.card-footer { padding:10px 14px; border-top:1px solid #f0f0f0; display:flex; gap:6px; }
+.btn { padding:6px 16px; border:none; border-radius:4px; cursor:pointer; font-size:13px; }
+.btn-keep { background:#4caf50; color:#fff; }
+.btn-move { background:#ff9800; color:#fff; }
+.btn-reset { background:#eee; color:#666; }
+.btn-export { background:#2196f3; color:#fff; margin-left:auto; }
+.verdict { font-size:11px; padding:1px 6px; border-radius:3px; margin-left:6px; }
+.verdict-keep { background:#e8f5e9; color:#2e7d32; }
+.verdict-move { background:#fff3e0; color:#e65100; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h3>卡5 拒答样本审核 (100条)</h3>
+  <div class="stats">
+    <span class="stat stat-keep" id="stat-keep">应拒答: -</span>
+    <span class="stat stat-move" id="stat-move">不应拒: -</span>
+    <span class="stat stat-pending" id="stat-pending">待审: -</span>
+  </div>
+  <button class="btn btn-export" onclick="exportJSON()">📥 导出结果</button>
+</div>
+<div id="cards"></div>
+
+<script>
+let state = {};
+try { state = JSON.parse(localStorage.getItem('refusal_audit') || '{}'); } catch(e) {}
+
+fetch('../../data/sft/04_cards/card5_refusals.jsonl')
+  .then(r => r.text())
+  .then(text => {
+    const samples = text.trim().split('\n').map(l => JSON.parse(l));
+    let keep = 0, move = 0, pending = 0;
+    const div = document.getElementById('cards');
+
+    samples.forEach((s, idx) => {
+      const v = state[s.id];
+      if (v === 'keep') keep++;
+      else if (v === 'move') move++;
+      else pending++;
+
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.id = 'card-' + s.id;
+      card.innerHTML =
+        '<div class="card-header">'
+        + '<span><span class="id">' + s.id + '</span>'
+        + '<span class="badge badge-danger">' + (s.refusal_type || '拒答') + '</span>'
+        + (v ? '<span class="verdict verdict-' + v + '">' + (v==='keep' ? '✅ 应拒答' : '⚠️ 不该拒') + '</span>' : '')
+        + '</span>'
+        + '<span style="font-size:11px;color:#999">' + s.answer.length + '字</span>'
+        + '</div>'
+        + '<div class="card-body">'
+        + '<div class="col-label">Q</div>'
+        + '<div class="col-text">' + esc(s.question) + '</div>'
+        + '<div class="col-label" style="margin-top:8px">A</div>'
+        + '<div class="col-text">' + esc(s.answer) + '</div>'
+        + '</div>'
+        + '<div class="card-footer">'
+        + '<button class="btn btn-keep" onclick="judge(\'' + s.id + '\',\'keep\')">✅ 应拒答</button>'
+        + '<button class="btn btn-move" onclick="judge(\'' + s.id + '\',\'move\')">⚠️ 不该拒</button>'
+        + '<button class="btn btn-reset" onclick="judge(\'' + s.id + '\',null)">↩ 重置</button>'
+        + '</div>';
+      div.appendChild(card);
+    });
+
+    document.getElementById('stat-keep').textContent = '应拒答: ' + keep;
+    document.getElementById('stat-move').textContent = '不该拒: ' + move;
+    document.getElementById('stat-pending').textContent = '待审: ' + pending;
+  });
+
+function judge(id, verdict) {
+  if (verdict === null) delete state[id];
+  else state[id] = verdict;
+  localStorage.setItem('refusal_audit', JSON.stringify(state));
+
+  const card = document.getElementById('card-' + id) || document.querySelector('[id^="card-"]');
+  if (!card) return;
+  const header = card.querySelector('.card-header');
+  const existing = header.querySelector('.verdict');
+  if (existing) existing.remove();
+
+  if (verdict) {
+    const badge = document.createElement('span');
+    badge.className = 'verdict verdict-' + verdict;
+    badge.textContent = verdict === 'keep' ? '✅ 应拒答' : '⚠️ 不该拒';
+    header.querySelector('span').appendChild(badge);
+  }
+
+  let k = 0, m = 0, p = 0;
+  document.querySelectorAll('.card').forEach(c => {
+    const v = state[c.id.replace('card-', '')];
+    if (v === 'keep') k++; else if (v === 'move') m++; else p++;
+  });
+  document.getElementById('stat-keep').textContent = '应拒答: ' + k;
+  document.getElementById('stat-move').textContent = '不该拒: ' + m;
+  document.getElementById('stat-pending').textContent = '待审: ' + p;
+}
+
+function exportJSON() {
+  const out = Object.entries(state).map(([id, v]) => ({id, verdict: v}));
+  const blob = new Blob([JSON.stringify(out, null, 2)], {type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'refusal_audit.json';
+  alert('已导出 refusal_audit.json，请移动到项目根目录：\\n\\nmv ~/Downloads/refusal_audit.json ' + window.location.href.split('/scripts/')[0] + '/scripts/phase3_data/\\n\\n然后执行：\\npython scripts/phase3_data/clean_dataset.py --audit scripts/phase3_data/refusal_audit.json'
+  a.click();
+}
+
+function esc(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+</script>
+</body>
+</html>
